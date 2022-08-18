@@ -10,9 +10,9 @@ const categories = require('./routes/categoryRoutes');
 const app = express();
 
 var corsOptions = {
-    origin: 'https://sportshopsj.herokuapp.com/',
+    origin: '*',
     optionsSuccessStatus: 200,
-    //credentials: true // !!!!!!!!!!!!!
+    //credentials: true
 }
 
 app.use(express.json());
