@@ -14,7 +14,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: '*',
+        origin: 'https://sportshopsj.herokuapp.com/',
         methods: ['GET', 'POST'],
         //transports: ['websocket', 'polling'],
         //allowedHeaders: ['Access-Control-Allow-Origin'],

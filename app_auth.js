@@ -9,7 +9,7 @@ const { registerValid, loginValid } = require('./app_valid.js');
 const app = express();
 
 var corsOptions = {
-    origin: '*',
+    origin: 'https://sportshopsj.herokuapp.com/',
     optionsSuccessStatus: 200
 }
 
