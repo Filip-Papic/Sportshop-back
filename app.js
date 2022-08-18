@@ -107,7 +107,7 @@ app.get('/', authToken, (req, res) => {
 
 //app.use(express.static(path.join(__dirname, 'static')));
 
-app.set('port', process.env.PORT || 8000);//!!!!!
+//app.set('port', process.env.PORT || 8000);//!!!!!
 
 
 const staticMdl = express.static(path.join(__dirname, 'dist'));
@@ -119,7 +119,7 @@ app.use(history({ index: '/index.html' }));
 app.use(staticMdl);
 
 
-server.listen({ port: port }, async () => {
+server.listen({ port: process.env.PORT || port }, async () => {
     await sequelize.authenticate();
     console.log(`Connection has been established successfully on port ${port}.`);
 });
