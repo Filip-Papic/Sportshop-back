@@ -28,7 +28,7 @@ module.exports = {
         onDelete: 'cascade',
         onUpdate: 'cascade'
       },
-      userID: {
+      /* userID: {
         type: DataType.INTEGER,
         allowNull: false,
         references: {
@@ -37,8 +37,8 @@ module.exports = {
         },
         onDelete: 'cascade',
         onUpdate: 'cascade'
-      },
-      userID: {
+      }, */
+      /* userId: {
         type: DataType.INTEGER,
         allowNull: false,
         references: {
@@ -47,7 +47,7 @@ module.exports = {
         },
         onDelete: 'cascade',
         onUpdate: 'cascade'
-      },
+      }, */
       quantity: {
         type: DataType.INTEGER
       },
